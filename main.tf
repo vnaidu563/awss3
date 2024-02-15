@@ -15,7 +15,7 @@ resource "aws_s3_bucket" "mys3" {
 
   # Define access control configurations (optional)
   # For example, allow public read access to the objects in the bucket
-  acl = "public-read"
+  acl = "private"
 
   # Define tags for the bucket (optional)
   tags = {
