@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the repository
-                git https://github.com/vnaidu563/awss3.git
+                git 'chcekout successful'
             }
         }
         stage('Terraform Init') {
