@@ -17,14 +17,7 @@ pipeline {
                 }
             }
         }
-        stage('Terraform Plan') {
-            steps {
-                // Run terraform plan
-                script {
-                    sh 'terraform plan'
-                }
-            }
-        }
+        
         stage('Terraform Apply') {
             steps {
                 // Run terraform apply
@@ -34,10 +27,5 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            // Cleanup workspace after pipeline execution
-            cleanWs()
-        }
-    }
+    
 }
