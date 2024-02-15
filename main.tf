@@ -20,7 +20,7 @@ resource "aws_s3_bucket" "mys3" {
 
   # Define tags for the bucket (optional)
   tags = {
-    Name        = "MyBucket"
+    Name        = "mys3"
     Environment = "Production"
   }
 }
