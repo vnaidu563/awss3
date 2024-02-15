@@ -5,7 +5,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the repository
-                git 'chcekout successful'
+                echo checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/vnaidu563/awss3.git']]])
+
             }
         }
         stage('Terraform Init') {
