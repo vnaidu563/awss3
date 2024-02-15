@@ -8,7 +8,6 @@ provider "aws" {
 # Define the S3 bucket resource
 resource "aws_s3_bucket" "mys3" {
   bucket = "vinay-s3-bucket"  # Specify a globally unique bucket name
-  acl = "private"
   # Enable versioning for the bucket (optional)
   versioning {
     enabled = true
